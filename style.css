@@ -29,7 +29,7 @@ body{
   height: 700px;
   background-size: cover;
   background-position: center;
-  background-image: url('/img/python.jpg');
+  background-image: url('python.jpg');
 }
 
 .overlay{
@@ -262,14 +262,14 @@ li a:hover:not(.active) {
   background-position: center;
   background-size: cover;
   background-position: center;
-  background-image: url('/img/space invaders.png');
+  background-image: url('space invaders.png');
 }
 
-#desktopImg2{ background-image: url('/img/snake game.png');}
+#desktopImg2{ background-image: url('snake game.png');}
 
-#desktopImg3{ background-image: url('/img/pac man.png');}
+#desktopImg3{ background-image: url('pac man.png');}
 
-#desktopImg4{ background-image: url('/img/music.png');}
+#desktopImg4{ background-image: url('music.png');}
 
 /* DESKTOP SHOWCASE PYQT EXAMPLE */
 #desktop-showcase{
@@ -293,7 +293,7 @@ li a:hover:not(.active) {
   background-color: white;
   background-size: cover;
   background-position: center;
-  background-image: url('/img/pyqt.png');
+  background-image: url('pyqt.png');
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
 }
 
@@ -318,7 +318,7 @@ li a:hover:not(.active) {
   height: 350px;
   background-size: cover;
   background-position: center;
-  background-image: url('/img/django.jpg');
+  background-image: url('django.jpg');
 }
 
 /* WEB SHOWCASE DJANGO EXAMPLE */
@@ -341,7 +341,7 @@ li a:hover:not(.active) {
   background-size: cover;
   background-position: center;
   background-color: white;
-  background-image: url('/img/django_unicorn.png');
+  background-image: url('django_unicorn.png');
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
 }
 
@@ -366,14 +366,14 @@ li a:hover:not(.active) {
   height: 175px;
   background-size: cover;
   background-position: center;
-  background-image: url('/img/mobile_app1.png');
+  background-image: url('mobile_app1.png');
 }
 
-#mobileImg2{ background-image: url('/img/mobile_app2.jpg');}
+#mobileImg2{ background-image: url('mobile_app2.jpg');}
 
-#mobileImg3{ background-image: url('/img/mobile_app3.png');}
+#mobileImg3{ background-image: url('mobile_app3.png');}
 
-#mobileImg4{ background-image: url('/img/mobile_app4.png');}
+#mobileImg4{ background-image: url('mobile_app4.png');}
 
 .mobile-showcase-text h1{ font-size: 3rem;}
 
@@ -399,7 +399,7 @@ li a:hover:not(.active) {
   transform: rotate(2deg);
   background-size: cover;
   background-position: center;
-  background-image: url('/img/kivy.png');
+  background-image: url('kivy.png');
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
 }
 
