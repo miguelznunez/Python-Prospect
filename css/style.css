@@ -1,0 +1,421 @@
+/* GLOBAL */
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  font-size: 1.5rem;
+  color: white;
+  font-family: 'Takota';
+  overflow-x: hidden;
+}
+
+.main-container{
+  width: 1600px;
+  margin: auto;
+}
+
+.sub-container{
+  width: 85%;
+  margin: auto;
+  position: relative;
+}
+
+
+/* HEADER */
+#header{
+  height: 700px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/python.jpg');
+}
+
+.overlay{
+  height: 700px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.header-showcase{
+  height: 700px;
+}
+
+.nav{
+  height: 20px;
+}
+
+li {
+  float: left;
+  list-style: none;
+}
+
+li a , li i{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+}
+
+.current{
+  color:yellow;
+}
+
+.main-showcase-text{
+  top: 30%;
+  left: 5%;
+  position: absolute;
+  width: 450px;
+}
+
+/* PERCENTAGE CIRCLES SECTION */
+#statistics{
+  background-color: #FFD43B;
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.statistics{
+  min-height: 170px;
+  display: flex;
+  padding: 25px;
+  justify-content: space-evenly;
+  
+  position: relative;
+}
+
+.statistics p{
+  color: black;
+}
+
+.js-circle-wrap, 
+.python-circle-wrap,
+.java-circle-wrap {
+  width: 150px;
+  height: 150px;
+  background: #fff;
+  border-radius: 50%;
+}
+
+.js-circle-wrap .circle .mask,
+.js-circle-wrap .circle .fill,
+.python-circle-wrap .circle .mask,
+.python-circle-wrap .circle .fill,
+.java-circle-wrap .circle .mask,
+.java-circle-wrap .circle .fill  {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.js-circle-wrap .circle .mask,
+.python-circle-wrap .circle .mask,
+.java-circle-wrap .circle .mask{
+  clip: rect(0px, 150px, 150px, 75px);
+}
+
+.js-circle-wrap .circle .mask .fill{
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #000;
+}
+
+.python-circle-wrap .circle .mask .fill{
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #000;
+}
+
+.java-circle-wrap .circle .mask .fill{
+  clip: rect(0px, 75px, 150px, 0px);
+  background-color: #000;
+}
+
+.js-circle-wrap .circle .mask.full,
+.js-circle-wrap .circle .fill{
+  animation: jsFill ease-in-out 3s;
+  transform: rotate(121deg);
+}
+ 
+@keyframes jsFill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(121deg);
+  }
+}
+
+.python-circle-wrap .circle .mask.full,
+.python-circle-wrap .circle .fill {
+  animation: pythonFill ease-in-out 3s;
+  transform: rotate(79deg);
+}
+
+@keyframes pythonFill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(79deg);
+  }
+}
+
+.java-circle-wrap .circle .mask.full,
+.java-circle-wrap .circle .fill {
+  animation: javaFill ease-in-out 3s;
+  transform: rotate(72deg);
+}
+
+@keyframes javaFill {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(72deg);
+  }
+}
+
+.js-circle-wrap .inside-circle,
+.python-circle-wrap .inside-circle,
+.java-circle-wrap .inside-circle{
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  color: #fff;
+  background: #FFD43B;
+  line-height: 130px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+.js-under-circle{
+  bottom: 0;
+  left: 19%;
+  position: absolute;
+}
+
+.python-under-circle{
+  bottom: 0;
+  left: 48%;
+  position: absolute;
+}
+
+.java-under-circle{
+  bottom: 0;
+  left: 75.5%;
+  position: absolute;
+}
+
+.source{
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 1rem;
+  background-color: #FFD43B;
+}
+
+.source a{
+  text-decoration: none;
+}
+
+/* DESKTOP APP SHOWCASE */
+#desktop{
+  background: linear-gradient(to right, black 45%, #306998);
+}
+
+.desktop-showcase{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 700px;
+}
+
+.desktop-showcase-text{ width: 450px;}
+
+.desktop-showcase-text h1{ font-size: 3rem;}
+
+.images{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 625px;
+  height: auto;
+}
+
+#desktopImg1, #desktopImg2, #desktopImg3, #desktopImg4 {
+  width: 275px;
+  height: 175px;
+  background-position: center;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/space invaders.png');
+}
+
+#desktopImg2{ background-image: url('/img/snake game.png');}
+
+#desktopImg3{ background-image: url('/img/pac man.png');}
+
+#desktopImg4{ background-image: url('/img/music.png');}
+
+/* DESKTOP SHOWCASE PYQT EXAMPLE */
+#desktop-showcase{
+  background-color: #306998;
+}
+
+.desktop-showcase-pyqt{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.desktop-showcase-pyqt-text{ width: 500px; }
+
+#pyqtImg{
+  width: 325px;
+  height: 300px;
+  margin: -20px 0;
+  transform: rotate(2deg);
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/pyqt.png');
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
+}
+
+/* WEB APP SHOWCASE */
+#web{
+  background: linear-gradient(to left, black 45%, #143306);
+}
+
+.web-showcase{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 700px;
+}
+
+.web-showcase-text{ width: 450px;}
+
+.web-showcase-text h1{ font-size: 3rem;}
+
+#webImg{
+  width: 625px;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/django.jpg');
+}
+
+/* WEB SHOWCASE DJANGO EXAMPLE */
+#web-showcase{
+  background-color: #143306;
+}
+.web-showcase-django{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+
+#djangoImg{
+  margin: -20px 0;
+  width: 450px;
+  height: 300px;
+  transform: rotate(-2deg);
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  background-image: url('/img/django_unicorn.png');
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
+}
+
+#web-showcase-django-text{ width: 500px;}
+
+/* MOBILE APP SHOWCASE */
+#mobile{
+  background: linear-gradient(to right, black 45%, #646464);
+}
+
+.mobile-showcase{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 700px;
+}
+
+.mobile-showcase-text{ width: 450px;}
+
+#mobileImg1, #mobileImg2, #mobileImg3, #mobileImg4{
+  width: 275px;
+  height: 175px;
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/mobile_app1.png');
+}
+
+#mobileImg2{ background-image: url('/img/mobile_app2.jpg');}
+
+#mobileImg3{ background-image: url('/img/mobile_app3.png');}
+
+#mobileImg4{ background-image: url('/img/mobile_app4.png');}
+
+.mobile-showcase-text h1{ font-size: 3rem;}
+
+/* MOBILE SHOWCASE KIVY EXAMPLE */
+#mobile-showcase{
+   background-color: #646464;
+}
+
+.mobile-showcase-kivy{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#mobile-showcase-kivy-text{ width: 500px;}
+
+#kivyImg{
+  margin: -20px 0;
+  width: 325px;
+  height: 300px;
+  background-color: #fff;
+  transform: rotate(2deg);
+  background-size: cover;
+  background-position: center;
+  background-image: url('/img/kivy.png');
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
+}
+
+.footer{
+  font-size: 1rem;
+  background-color: #000;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(max-width: 1600px){
+  .main-container{
+    width: 100%;
+  }
+}
+
+
