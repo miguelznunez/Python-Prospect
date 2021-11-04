@@ -28,21 +28,17 @@ body{
 #header{
   height: 700px;
   background-size: cover;
-  background-position: center;
+  background-position: 50% 25%;
   background-image: url('python.jpg');
 }
 
 .overlay{
   height: 700px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header-showcase{
   height: 700px;
-}
-
-.nav{
-  height: 20px;
 }
 
 li {
@@ -228,6 +224,7 @@ li a:hover:not(.active) {
 }
 
 .source a{
+  color: black;
   text-decoration: none;
 }
 
